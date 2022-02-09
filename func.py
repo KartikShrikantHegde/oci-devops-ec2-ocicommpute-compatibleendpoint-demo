@@ -83,8 +83,8 @@ def handler(ctx, data: io.BytesIO=None):
        
         logging.getLogger().info('subnet is ' + str(aws_subnet_id))
 
-        oci_region = 'us-phoenix-1' #Eventually this will come from the compat endpoint handeler 
-        aws_region = 'us-east-1' #Eventually get this from AWS Endpoint context value 
+        oci_region = 'us-ashburn-1' #Eventually this will come from the compat endpoint handeler 
+        aws_region = 'us-east-2' #Eventually get this from AWS Endpoint context value 
 
         oci_instance_shape = shape_config[aws_shape_name]
         oci_subnet_id = subnet_config[aws_subnet_id]
@@ -95,7 +95,7 @@ def handler(ctx, data: io.BytesIO=None):
         oci_sdk_handler = oci_sdk_actions(oci_region)
         ad_info=oci_sdk_handler.fetch_ad(oci_compartment_ocid,aws_region)
         logging.getLogger().info("Proceeding with AD info" + str(ad_info[oci_instance_ad_count]))
-        oci_ad_name='Qhab:PHX-AD-1' #This will be from the map,token.
+        oci_ad_name='GrCh:US-ASHBURN-AD-1' #This will be from the map,token.
         instance_creation_response = oci_sdk_handler.launch_instance(oci_instance_shape,oci_subnet_id,oci_image_id,oci_compartment_ocid,oci_ad_name)
         return response.Response(
             ctx, 

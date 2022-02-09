@@ -8,8 +8,8 @@
 
     "us-east-2":{
         "oci_region":"us-ashburn-1",
-        "oci_ad":"AD-2",
-        "oci_fd":"FD-1",
+        "oci_ad":"AD-1",
+        "oci_fd":"FD-2",
         "oci_compartment_ocid":"ocid1.compartment.oc1..aaaaaaaa7xoyel7zcjk5eumgoizj6vnpeel7qhv3mkrcduvi7pxev6cnhdfa"
     }
 }

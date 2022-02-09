@@ -1,8 +1,8 @@
 {
-    "Region":"us-east-1", 
-    "image-id":"ami-0abcdef1234567890",
-    "instance-type":"tr.micro",
-    "subnet-id":"subnet-08fc749671b2d077c",
+    "Region":"us-east-2", 
+    "image-id":"ami-0b614a5d911900a9b",
+    "instance-type":"t2.micro",
+    "subnet-id":"subnet-0b20ff4b4a16517f8",
     "security-group-ids":"",
     "key-name":"",
     "security-group-ids":"",
